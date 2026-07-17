@@ -26,7 +26,7 @@ Hệ thống Container cần 2 Role riêng biệt để chạy và tương tác 
   * `SecretsManagerReadWrite` (Để đọc mật khẩu DB)
 * Nhấn **Next** → Role name: `WeDo-ECS-Task-Role` → **Create role**
 
-![Tạo IAM Role](/images/5-Workshop/5.3-IAM-Infrastructure/hinh-iam-role.jpg)
+![Tạo IAM Role](/AWS_C3D1_WEDO/images/5-Workshop/5.3-IAM-Infrastructure/hinh-iam-role.jpg)
 *(Lưu ý: Bạn cần cấp quyền chính xác để các dịch vụ có thể giao tiếp nội bộ)*
 
 ### 5.3.2. Thiết lập Hạ tầng mạng (VPC Setup)
@@ -43,7 +43,7 @@ Thay vì tạo tay từng Subnet rất dễ nhầm, chúng ta sẽ dùng tính n
 * NAT gateways: **In 1 AZ** (Để tiết kiệm chi phí thay vì 1 per AZ)
 * Nhấn **Create VPC** và chờ AWS tự động đi dây mạng lưới.
 
-![Tạo VPC và Subnet cơ bản](/images/5-Workshop/5.3-IAM-Infrastructure/hinh-vpc-subnet.jpg)
+![Tạo VPC và Subnet cơ bản](/AWS_C3D1_WEDO/images/5-Workshop/5.3-IAM-Infrastructure/hinh-vpc-subnet.jpg)
 
 ### 5.3.3. Route 53 & WAFv2 Setup
 **Route 53 - Cấu hình DNS:**
@@ -68,7 +68,7 @@ Hiện tại Route 53 không còn cung cấp tên miền tùy chỉnh miễn ph�
 * Security groups: Chọn Security Group nội bộ (cho phép Inbound Port 443 từ dải IP của VPC).
 * Bấm **Create endpoint**.
 
-![Tạo VPC Endpoint cho Secrets Manager](/images/5-Workshop/5.3-IAM-Infrastructure/hinh-endpoint-1.jpg)
+![Tạo VPC Endpoint cho Secrets Manager](/AWS_C3D1_WEDO/images/5-Workshop/5.3-IAM-Infrastructure/hinh-endpoint-1.jpg)
 
 **2. Endpoint cho CloudWatch Logs (`wedo-cloudwatch-endpoint`):**
 * Tương tự bước trên, tạo một Endpoint mới.
@@ -76,11 +76,11 @@ Hiện tại Route 53 không còn cung cấp tên miền tùy chỉnh miễn ph�
 * Cấu hình VPC, Subnet và Security Group y hệt như Endpoint của Secrets Manager.
 * Bấm **Create endpoint** và đợi trạng thái chuyển sang **Available**.
 
-![Tạo VPC Endpoint cho CloudWatch](/images/5-Workshop/5.3-IAM-Infrastructure/hinh-endpoint-2.jpg)
+![Tạo VPC Endpoint cho CloudWatch](/AWS_C3D1_WEDO/images/5-Workshop/5.3-IAM-Infrastructure/hinh-endpoint-2.jpg)
 
 **Kết quả nghiệm thu:** Sau vài phút, cả hai Endpoint đều chuyển sang trạng thái hoạt động.
 
-![Kết quả tạo Endpoint](/images/5-Workshop/5.3-IAM-Infrastructure/endpoint_ket_qua.png)
+![Kết quả tạo Endpoint](/AWS_C3D1_WEDO/images/5-Workshop/5.3-IAM-Infrastructure/endpoint_ket_qua.png)
 
 ### 5.3.5. Khởi tạo NAT Gateway và Cấu hình Route Table
 Để các tài nguyên nằm trong mạng nội bộ (Private Subnet) như ECS Fargate hay RDS có thể truy cập Internet (ví dụ: để pull Docker image hoặc gọi API bên ngoài) mà vẫn đảm bảo tính bảo mật không bị truy cập ngược từ Internet vào, chúng ta cần thiết lập NAT Gateway.
@@ -91,18 +91,18 @@ Hiện tại Route 53 không còn cung cấp tên miền tùy chỉnh miễn ph�
 * Subnet: Bắt buộc chọn một **Public Subnet** (Ví dụ: `wedo-workspace-subnet-public1`).
 * Elastic IP allocation: Chọn **Allocate Elastic IP** để AWS cấp phát một IP tĩnh cho NAT.
 * Nhấn **Create NAT gateway** và chờ vài phút để trạng thái chuyển sang *Available*.
-![Khởi tạo NAT Gateway](/images/5-Workshop/5.3-IAM-Infrastructure/nat-create.jpg)
-![NAT Gateway thành công](/images/5-Workshop/5.3-IAM-Infrastructure/nat-success.png)
+![Khởi tạo NAT Gateway](/AWS_C3D1_WEDO/images/5-Workshop/5.3-IAM-Infrastructure/nat-create.jpg)
+![NAT Gateway thành công](/AWS_C3D1_WEDO/images/5-Workshop/5.3-IAM-Infrastructure/nat-success.png)
 
 **Bước 2: Cập nhật Route Table cho Private Subnet**
 * Chuyển sang menu **Route tables** trong VPC.
 * Tìm và chọn Route Table đang được liên kết với các **Private Subnets** (Ví dụ: `wedo-workspace-rtb-private`).
-![Chọn Private Route Table](/images/5-Workshop/5.3-IAM-Infrastructure/rtb-private.jpg)
+![Chọn Private Route Table](/AWS_C3D1_WEDO/images/5-Workshop/5.3-IAM-Infrastructure/rtb-private.jpg)
 * Chuyển sang tab **Routes** → Nhấn **Edit routes**.
 * Nhấn **Add route**:
   * Destination: `0.0.0.0/0` (Đại diện cho toàn bộ luồng traffic đi ra Internet).
   * Target: Chọn **NAT Gateway** và trỏ vào con `wedo-nat-gateway` vừa tạo ở Bước 1.
 * Nhấn **Save changes** để lưu lại.
-![Trỏ Route ra NAT Gateway](/images/5-Workshop/5.3-IAM-Infrastructure/rtb-save-route.png)
+![Trỏ Route ra NAT Gateway](/AWS_C3D1_WEDO/images/5-Workshop/5.3-IAM-Infrastructure/rtb-save-route.png)
 
 Từ lúc này, các Container nằm trong Private Subnet đã có thể an toàn đi ra Internet thông qua "cửa khẩu" NAT Gateway.

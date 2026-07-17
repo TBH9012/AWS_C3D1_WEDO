@@ -18,4 +18,4 @@ Bài viết giới thiệu kiến trúc thực chiến ứng dụng Spring Boot 
 
 **Đánh giá giải pháp**: Giải pháp giải quyết triệt để vấn đề Cold Start cho Java, hỗ trợ khả năng tự động mở rộng linh hoạt và tối ưu chi phí vận hành cho các doanh nghiệp đang hiện đại hóa hệ thống hoặc chuyển đổi sang Microservices.
 
-![Sơ đồ kiến trúc AWS Lambda với tính năng Snapstart](/images/3-blogsposted/blog2/blog2.jpg)
+![Sơ đồ kiến trúc AWS Lambda với tính năng Snapstart](/AWS_C3D1_WEDO/images/3-blogsposted/blog2/blog2.jpg)

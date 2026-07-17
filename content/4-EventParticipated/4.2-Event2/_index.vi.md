@@ -85,14 +85,14 @@ Tham gia sự kiện **“FCAJ Community Day”** là một trải nghiệm tuy�
 - Áp lực thời gian hoàn toàn có thể trở thành đòn bẩy để tạo ra những sản phẩm đột phá nếu có chiến lược rõ ràng.
 
 #### Một số hình ảnh khi tham gia sự kiện
-![Check-in tại sự kiện FCAJ](/images/4-EventParticipated/event2/checkin1.jpg)
+![Check-in tại sự kiện FCAJ](/AWS_C3D1_WEDO/images/4-EventParticipated/event2/checkin1.jpg)
 
-![Check-in tại Tầng 36 tháp Bitexco](/images/4-EventParticipated/event2/checkin2.jpg)
+![Check-in tại Tầng 36 tháp Bitexco](/AWS_C3D1_WEDO/images/4-EventParticipated/event2/checkin2.jpg)
 
-![Check-in tại Tầng 36 tháp Bitexco](/images/4-EventParticipated/event2/checkin3.jpg)
+![Check-in tại Tầng 36 tháp Bitexco](/AWS_C3D1_WEDO/images/4-EventParticipated/event2/checkin3.jpg)
 
-![Check-in tại Tầng 36 tháp Bitexco](/images/4-EventParticipated/event2/checkin4.jpg)
+![Check-in tại Tầng 36 tháp Bitexco](/AWS_C3D1_WEDO/images/4-EventParticipated/event2/checkin4.jpg)
 
-![Check-in tại Tầng 36 tháp Bitexco](/images/4-EventParticipated/event2/checkin5.jpg)
+![Check-in tại Tầng 36 tháp Bitexco](/AWS_C3D1_WEDO/images/4-EventParticipated/event2/checkin5.jpg)
 
 > Tổng thể, sự kiện không chỉ mang lại khối lượng lớn kiến thức thực chiến mà còn giúp ta định hình lại tư duy phát triển sản phẩm, từ đó chuẩn bị hành trang vững chắc hơn cho hành trình thực tập tại First Cloud AI Journey.

@@ -5,55 +5,25 @@ weight: 1
 chapter: false
 pre: " <b> 1.5. </b> "
 ---
-{{% notice warning %}}
-⚠️ **Lưu ý:** Các thông tin dưới đây chỉ nhằm mục đích tham khảo, vui lòng **không sao chép nguyên văn** cho bài báo cáo của bạn kể cả warning này.
-{{% /notice %}}
+
 
 
 ### Mục tiêu tuần 5:
-
-* Kết nối, làm quen với các thành viên trong First Cloud AI Journey.
-* Hiểu dịch vụ AWS cơ bản, cách dùng console & CLI.
+* Nắm vững kỹ thuật di chuyển máy ảo giữa môi trường on-premises và AWS bằng VM Import/Export.
+* Thành thạo quy trình triển khai, quản lý và vận hành ứng dụng trong môi trường container hóa (Docker, Amazon ECR, Nginx).
+* Hiểu rõ kiến trúc Amazon ECS, các chiến lược cập nhật phiên bản (Rolling, Blue/Green) và quy trình tự động hóa CI/CD.
+* Giám sát hệ thống container và quản lý log hiệu quả bằng CloudWatch Container Insights và FireLens.
 
 ### Các công việc cần triển khai trong tuần này:
-| Thứ | Công việc                                                                                                                                                                                   | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu                            |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | --------------- | ----------------------------------------- |
-| 2   | - Làm quen với các thành viên FCAJ <br> - Đọc và lưu ý các nội quy, quy định tại đơn vị thực tập                                                                                             | 11/08/2025   | 11/08/2025      |
-| 3   | - Tìm hiểu AWS và các loại dịch vụ <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                            | 12/08/2025   | 12/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Tạo AWS Free Tier account <br> - Tìm hiểu AWS Console & AWS CLI <br> - **Thực hành:** <br>&emsp; + Tạo AWS account <br>&emsp; + Cài AWS CLI & cấu hình <br> &emsp; + Cách sử dụng AWS CLI | 13/08/2025   | 13/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Tìm hiểu EC2 cơ bản: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - Các cách remote SSH vào EC2 <br> - Tìm hiểu Elastic IP   <br>                  | 14/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Thực hành:** <br>&emsp; + Tạo EC2 instance <br>&emsp; + Kết nối SSH <br>&emsp; + Gắn EBS volume                                                                                         | 15/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-
+| Thứ | Công việc | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu |
+| :--- | :--- | :--- | :--- | :--- |
+| 2 | **VM Import/Export:** Thực hành tính năng import/export image máy ảo từ môi trường on-premises (như VMware) lên Amazon EC2 để phục vụ di chuyển ứng dụng hoặc sao lưu (Disaster Recovery). Tìm hiểu lưu trữ Amazon S3. | 18/05/2026 | 18/05/2026 | https://000014.awsstudygroup.com/1-introduction/ |
+| 3-5 | **Triển khai ứng dụng với Docker Containers:** Xây dựng và quản lý quy trình triển khai bằng Docker Hub, Amazon ECR, Amazon EC2 và Amazon RDS. Cấu hình Nginx làm Reverse Proxy và Load Balancer để điều hướng lưu lượng từ Client đến Frontend/Backend. | 19/05/2026 | 21/05/2026 | https://000015.awsstudygroup.com/1-introduction/ |
+| 6 | **Study - ECS, CI/CD & Monitoring:** Nghiên cứu kiến trúc Amazon ECS (Task, Service, Cluster, Fargate/EC2). Tìm hiểu các nền tảng CI/CD (GitHub Actions, GitLab CI/CD, AWS CodePipeline) và công cụ giám sát (CloudWatch Container Insights, FireLens). | 22/05/2026 | 22/05/2026 | https://000016.awsstudygroup.com/1-introduction/ <br>&emsp; https://000017.awsstudygroup.com/1-introduction/|
+| 7 | **Sự kiện:** Tham gia sự kiện Event 2. | 23/05/2026 | 23/05/2026 | [Xem báo cáo Event 2](/4-eventparticipated/4.2-event2/) |
 
 ### Kết quả đạt được tuần 5:
-
-* Hiểu AWS là gì và nắm được các nhóm dịch vụ cơ bản: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
-
-* Đã tạo và cấu hình AWS Free Tier account thành công.
-
-* Làm quen với AWS Management Console và biết cách tìm, truy cập, sử dụng dịch vụ từ giao diện web.
-
-* Cài đặt và cấu hình AWS CLI trên máy tính bao gồm:
-  * Access Key
-  * Secret Key
-  * Region mặc định
-  * ...
-
-* Sử dụng AWS CLI để thực hiện các thao tác cơ bản như:
-
-  * Kiểm tra thông tin tài khoản & cấu hình
-  * Lấy danh sách region
-  * Xem dịch vụ EC2
-  * Tạo và quản lý key pair
-  * Kiểm tra thông tin dịch vụ đang chạy
-  * ...
-
-* Có khả năng kết nối giữa giao diện web và CLI để quản lý tài nguyên AWS song song.
-* ...
-
-
+* **Di chuyển & Lưu trữ đám mây:** Có khả năng chuyển đổi và đưa các image máy ảo (VM) từ môi trường cục bộ lên hạ tầng Amazon EC2 một cách an toàn, đáp ứng tốt cho các kịch bản di chuyển khối lượng công việc (workloads) và khắc phục thảm họa.
+* **Container hóa & Vận hành ứng dụng:** Thiết lập thành công môi trường ứng dụng container hóa toàn diện. Cấu hình mượt mà luồng xử lý yêu cầu (workflow) từ Internet Gateway qua Nginx đến các container Frontend/Backend và kết nối an toàn với cơ sở dữ liệu Amazon RDS.
+* **Kiến trúc ECS & Tự động hóa CI/CD:** Nắm bắt sâu sắc cách thức hoạt động của Amazon ECS, phân biệt rõ các chiến lược Cluster/Service Scaling và các phương pháp triển khai an toàn (Rolling vs Blue/Green). Hiểu rõ vòng đời tự động hóa CI/CD nhằm tối ưu hóa quá trình xây dựng, kiểm thử và phát hành phần mềm.
+* **Giám sát & Định tuyến Log:** Tích lũy kiến thức thiết lập giám sát hiệu suất container (CPU, RAM, Network) với CloudWatch Container Insights và biết cách định tuyến log linh hoạt bằng tính năng FireLens.

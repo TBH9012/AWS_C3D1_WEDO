@@ -5,55 +5,24 @@ weight: 2
 chapter: false
 pre: " <b> 1.11. </b> "
 ---
-{{% notice warning %}}
-⚠️ **Lưu ý:** Các thông tin dưới đây chỉ nhằm mục đích tham khảo, vui lòng **không sao chép nguyên văn** cho bài báo cáo của bạn kể cả warning này.
-{{% /notice %}}
-
 
 ### Mục tiêu tuần 11:
 
-* Kết nối, làm quen với các thành viên trong First Cloud AI Journey.
-* Hiểu dịch vụ AWS cơ bản, cách dùng console & CLI.
+* Áp dụng tư duy Cơ sở hạ tầng dưới dạng mã (Infrastructure as Code - IaC) để tự động hóa việc triển khai và quản lý tài nguyên AWS.
+* Làm quen và thực hành thiết lập môi trường phát triển trực tiếp trên trình duyệt với AWS Cloud9 IDE.
+* Thống nhất định hướng tiếp theo dự án nhóm, xác định rõ phạm vi, công cụ làm việc và chốt danh sách phân công làm việc.
+* Tham gia phác thảo sơ đồ kiến trúc hệ thống sơ bộ và hoàn tất việc khởi tạo không gian làm việc.
 
 ### Các công việc cần triển khai trong tuần này:
 | Thứ | Công việc                                                                                                                                                                                   | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu                            |
 | --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | --------------- | ----------------------------------------- |
-| 2   | - Làm quen với các thành viên FCAJ <br> - Đọc và lưu ý các nội quy, quy định tại đơn vị thực tập                                                                                             | 11/08/2025   | 11/08/2025      |
-| 3   | - Tìm hiểu AWS và các loại dịch vụ <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                            | 12/08/2025   | 12/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Tạo AWS Free Tier account <br> - Tìm hiểu AWS Console & AWS CLI <br> - **Thực hành:** <br>&emsp; + Tạo AWS account <br>&emsp; + Cài AWS CLI & cấu hình <br> &emsp; + Cách sử dụng AWS CLI | 13/08/2025   | 13/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Tìm hiểu EC2 cơ bản: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - Các cách remote SSH vào EC2 <br> - Tìm hiểu Elastic IP   <br>                  | 14/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Thực hành:** <br>&emsp; + Tạo EC2 instance <br>&emsp; + Kết nối SSH <br>&emsp; + Gắn EBS volume                                                                                         | 15/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
+| 2-4   | **AWS CloudFormation:** Tìm hiểu cách mô tả hạ tầng đám mây bằng code để tự động hóa triển khai ứng dụng. Cấu hình môi trường và thực hành trực tiếp trên trình duyệt bằng AWS Cloud9 IDE.  | 29/06/2026 | 01/07/2026 | https://000037.awsstudygroup.com/1-introduction |
+| 5   | **Kick-off dự án nhóm:** <br> -Thảo luận thêm về ý tưởng, xác định mục tiêu và phạm vi của dự án chung. <br> - Thống nhất các công cụ, góp ý và quản lý công việc. | 02/07/2026   | 02/07/2026 | Thảo luận nội bộ nhóm |
+| 6   | **Thiết kế & Phân công công việc:** <br> - Chốt tech stack cho dự án. <br> - Góp ý chỉnh sửa phác thảo sơ bộ kiến trúc hệ thống sẽ triển khai trên AWS. <br> - Làm nhiệm vụ được phân công, khởi tạo Github repository và setup workshop. | 03/07/2026 | 03/07/2026 | Thảo luận nội bộ nhóm |
 
 
 ### Kết quả đạt được tuần 11:
 
-* Hiểu AWS là gì và nắm được các nhóm dịch vụ cơ bản: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
-
-* Đã tạo và cấu hình AWS Free Tier account thành công.
-
-* Làm quen với AWS Management Console và biết cách tìm, truy cập, sử dụng dịch vụ từ giao diện web.
-
-* Cài đặt và cấu hình AWS CLI trên máy tính bao gồm:
-  * Access Key
-  * Secret Key
-  * Region mặc định
-  * ...
-
-* Sử dụng AWS CLI để thực hiện các thao tác cơ bản như:
-
-  * Kiểm tra thông tin tài khoản & cấu hình
-  * Lấy danh sách region
-  * Xem dịch vụ EC2
-  * Tạo và quản lý key pair
-  * Kiểm tra thông tin dịch vụ đang chạy
-  * ...
-
-* Có khả năng kết nối giữa giao diện web và CLI để quản lý tài nguyên AWS song song.
-* ...
-
-
+* Tự động hóa hạ tầng (IaC): Thành thạo việc sử dụng CloudFormation và Cloud9 IDE để định nghĩa và khởi tạo trọn gói một cụm tài nguyên trên AWS, giảm thiểu rủi ro từ các thao tác thủ công.
+* Thống nhất được ý tưởng dự án và công cụ làm việc chung.
+* Phụ giúp phác thảo xong sơ đồ kiến trúc cơ bản và hoàn tất công việc cùng các thành viên.

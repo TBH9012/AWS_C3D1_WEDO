@@ -5,55 +5,22 @@ weight: 2
 chapter: false
 pre: " <b> 1.10. </b> "
 ---
-{{% notice warning %}}
-⚠️ **Lưu ý:** Các thông tin dưới đây chỉ nhằm mục đích tham khảo, vui lòng **không sao chép nguyên văn** cho bài báo cáo của bạn kể cả warning này.
-{{% /notice %}}
+
 
 
 ### Mục tiêu tuần 10:
-
-* Kết nối, làm quen với các thành viên trong First Cloud AI Journey.
-* Hiểu dịch vụ AWS cơ bản, cách dùng console & CLI.
+* Trực quan hóa, phân tích và tối ưu hóa chi phí AWS tuân thủ theo Well-Architected Framework.
+* Xây dựng hệ thống Data Lake toàn diện để lưu trữ, xử lý và trực quan hóa dữ liệu lớn (Big Data).
+* Triển khai giám sát hệ thống chuyên sâu và tự động hóa cảnh báo hạ tầng với Amazon CloudWatch.
 
 ### Các công việc cần triển khai trong tuần này:
-| Thứ | Công việc                                                                                                                                                                                   | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu                            |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | --------------- | ----------------------------------------- |
-| 2   | - Làm quen với các thành viên FCAJ <br> - Đọc và lưu ý các nội quy, quy định tại đơn vị thực tập                                                                                             | 11/08/2025   | 11/08/2025      |
-| 3   | - Tìm hiểu AWS và các loại dịch vụ <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                            | 12/08/2025   | 12/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Tạo AWS Free Tier account <br> - Tìm hiểu AWS Console & AWS CLI <br> - **Thực hành:** <br>&emsp; + Tạo AWS account <br>&emsp; + Cài AWS CLI & cấu hình <br> &emsp; + Cách sử dụng AWS CLI | 13/08/2025   | 13/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Tìm hiểu EC2 cơ bản: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - Các cách remote SSH vào EC2 <br> - Tìm hiểu Elastic IP   <br>                  | 14/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Thực hành:** <br>&emsp; + Tạo EC2 instance <br>&emsp; + Kết nối SSH <br>&emsp; + Gắn EBS volume                                                                                         | 15/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-
+| Thứ | Công việc | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu |
+| :--- | :--- | :--- | :--- | :--- |
+| 2-3 | **Trực quan hóa chi phí (Cost Visualization):** Phân tích chi phí qua Cost Explorer (theo dịch vụ, tài khoản), kiểm tra phạm vi Savings Plan/RI. Tạo báo cáo EC2 tùy chỉnh và tìm hiểu phí truyền tải dữ liệu. Khắc phục sự cố cấu hình EC2. | 22/06/2026 | 23/06/2026 | https://000034.awsstudygroup.com/1-introduction/ |
+| 4 | **Data Lake trên AWS:** Thu thập và lưu trữ dữ liệu thô. Sử dụng AWS Glue làm Data Catalog, Amazon Athena để truy vấn dữ liệu và Amazon QuickSight để xây dựng Dashboard thống kê cho dự án phân tích dữ liệu âm nhạc. | 24/06/2026 | 24/06/2026 | https://000035.awsstudygroup.com/1-introduction/ |
+| 6 | **Amazon CloudWatch:** Thực hành thu thập Metrics, Logs. Cấu hình CloudWatch Alarm và Dashboard. Tìm hiểu Container Insights để giám sát môi trường EKS, ECS, Fargate giúp giảm thiểu thời gian xử lý sự cố (MTTR). | 26/06/2026 | 26/06/2026 | https://000036.awsstudygroup.com/1-introduction/ |
 
 ### Kết quả đạt được tuần 10:
-
-* Hiểu AWS là gì và nắm được các nhóm dịch vụ cơ bản: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
-
-* Đã tạo và cấu hình AWS Free Tier account thành công.
-
-* Làm quen với AWS Management Console và biết cách tìm, truy cập, sử dụng dịch vụ từ giao diện web.
-
-* Cài đặt và cấu hình AWS CLI trên máy tính bao gồm:
-  * Access Key
-  * Secret Key
-  * Region mặc định
-  * ...
-
-* Sử dụng AWS CLI để thực hiện các thao tác cơ bản như:
-
-  * Kiểm tra thông tin tài khoản & cấu hình
-  * Lấy danh sách region
-  * Xem dịch vụ EC2
-  * Tạo và quản lý key pair
-  * Kiểm tra thông tin dịch vụ đang chạy
-  * ...
-
-* Có khả năng kết nối giữa giao diện web và CLI để quản lý tài nguyên AWS song song.
-* ...
-
-
+* **Quản trị chi phí (Cost Management):** Thành thạo việc sử dụng Cost Explorer để theo dõi và tối ưu hóa chi phí. Đã tự khắc phục thành công lỗi phát sinh liên quan đến EC2 trong quá trình thực hành bằng cách chủ động rà soát và làm lại cấu hình chuẩn xác.
+* **Kiến trúc Dữ liệu lớn (Data Lake):** Hiểu rõ vòng đời của Big Data. Xây dựng thành công luồng xử lý dữ liệu liên hoàn: từ phân loại (Glue), truy vấn SQL serverless trực tiếp trên S3 (Athena) cho đến trực quan hóa thành biểu đồ (QuickSight).
+* **Giám sát hệ thống (CloudWatch):** Làm chủ khả năng quan sát (observability) toàn diện cho hạ tầng. Thiết lập thành công các cảnh báo tự động và bảng điều khiển trực quan để theo dõi sức khỏe ứng dụng và tài nguyên container theo thời gian thực.

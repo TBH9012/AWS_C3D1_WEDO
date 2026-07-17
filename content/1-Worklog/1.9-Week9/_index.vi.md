@@ -5,55 +5,26 @@ weight: 1
 chapter: false
 pre: " <b> 1.9. </b> "
 ---
-{{% notice warning %}}
-⚠️ **Lưu ý:** Các thông tin dưới đây chỉ nhằm mục đích tham khảo, vui lòng **không sao chép nguyên văn** cho bài báo cáo của bạn kể cả warning này.
-{{% /notice %}}
+
 
 
 ### Mục tiêu tuần 9:
-
-* Kết nối, làm quen với các thành viên trong First Cloud AI Journey.
-* Hiểu dịch vụ AWS cơ bản, cách dùng console & CLI.
+* Áp dụng giới hạn quyền truy cập an toàn, ngăn chặn rủi ro bằng IAM Permission Boundary.
+* Quản lý tập trung, tự động hóa quá trình vá lỗi (patching) và thực thi lệnh với AWS Systems Manager.
+* Thu thập số liệu hiệu suất và tối ưu hóa cấu hình máy chủ (Right-sizing EC2) với CloudWatch Agent và Compute Optimizer.
+* Bảo vệ dữ liệu lưu trữ (Encrypt at rest) với AWS KMS, kết hợp theo dõi log qua CloudTrail và Athena.
 
 ### Các công việc cần triển khai trong tuần này:
-| Thứ | Công việc                                                                                                                                                                                   | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu                            |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | --------------- | ----------------------------------------- |
-| 2   | - Làm quen với các thành viên FCAJ <br> - Đọc và lưu ý các nội quy, quy định tại đơn vị thực tập                                                                                             | 11/08/2025   | 11/08/2025      |
-| 3   | - Tìm hiểu AWS và các loại dịch vụ <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                            | 12/08/2025   | 12/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Tạo AWS Free Tier account <br> - Tìm hiểu AWS Console & AWS CLI <br> - **Thực hành:** <br>&emsp; + Tạo AWS account <br>&emsp; + Cài AWS CLI & cấu hình <br> &emsp; + Cách sử dụng AWS CLI | 13/08/2025   | 13/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Tìm hiểu EC2 cơ bản: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - Các cách remote SSH vào EC2 <br> - Tìm hiểu Elastic IP   <br>                  | 14/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Thực hành:** <br>&emsp; + Tạo EC2 instance <br>&emsp; + Kết nối SSH <br>&emsp; + Gắn EBS volume                                                                                         | 15/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-
+| Thứ | Công việc | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu |
+| :--- | :--- | :--- | :--- | :--- |
+| 2 | **IAM Permission Boundary:** Tìm hiểu cách ngăn chặn leo thang đặc quyền (privilege escalation). Thực hành tạo chính sách giới hạn và cấp quyền, sau đó kiểm tra giới hạn quyền đối với IAM User. | 15/06/2026 | 15/06/2026 | https://000030.awsstudygroup.com/1-introduction/ |
+| 3 | **AWS Systems Manager:** Quản lý tập trung tài nguyên. Cấu hình Patch Manager và sử dụng Run Command để tự động hóa việc vá lỗi phần mềm và thực thi lệnh trên nhiều máy chủ cùng lúc. | 16/06/2026 | 16/06/2026 | https://000031.awsstudygroup.com/1-introduction/ |
+| 4 | **Tối ưu kích thước EC2:** Cài đặt CloudWatch Agent để thu thập chỉ số bộ nhớ (Memory). Sử dụng AWS Resource Optimization và AWS Compute Optimizer để phân tích và chọn cấu hình EC2 phù hợp (Right-sizing). | 17/06/2026 | 17/06/2026 | https://000032.awsstudygroup.com/1-introduction/ |
+| 6 | **Mã hóa với AWS KMS:** Tạo khóa quản lý dịch vụ (KMS), thiết lập mã hóa bảo vệ dữ liệu trên Amazon S3. Kết hợp với CloudTrail để ghi nhận nhật ký API và dùng Athena để truy vấn log. | 19/06/2026 | 19/06/2026 | https://000033.awsstudygroup.com/1-introduction/ |
+| 7 | **Sự kiện:** Tham gia sự kiện Event 3. | 20/06/2026 | 20/06/2026 | [Xem báo cáo Event 3](/4-eventparticipated/4.3-event3/) |
 
 ### Kết quả đạt được tuần 9:
-
-* Hiểu AWS là gì và nắm được các nhóm dịch vụ cơ bản: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
-
-* Đã tạo và cấu hình AWS Free Tier account thành công.
-
-* Làm quen với AWS Management Console và biết cách tìm, truy cập, sử dụng dịch vụ từ giao diện web.
-
-* Cài đặt và cấu hình AWS CLI trên máy tính bao gồm:
-  * Access Key
-  * Secret Key
-  * Region mặc định
-  * ...
-
-* Sử dụng AWS CLI để thực hiện các thao tác cơ bản như:
-
-  * Kiểm tra thông tin tài khoản & cấu hình
-  * Lấy danh sách region
-  * Xem dịch vụ EC2
-  * Tạo và quản lý key pair
-  * Kiểm tra thông tin dịch vụ đang chạy
-  * ...
-
-* Có khả năng kết nối giữa giao diện web và CLI để quản lý tài nguyên AWS song song.
-* ...
-
-
+* **Bảo mật phân quyền (IAM):** Hiểu và áp dụng thành công IAM Permission Boundary, ngăn chặn hiệu quả rủi ro leo thang đặc quyền khi hệ thống có nhiều người dùng phức tạp.
+* **Tự động hóa vận hành (Systems Manager):** Đơn giản hóa quá trình quản trị bằng cách tự động hóa thành công các tác vụ vận hành diện rộng (như cập nhật bản vá, chạy lệnh), giúp giảm thiểu đáng kể thao tác thủ công.
+* **Tối ưu hóa Chi phí & Hiệu suất (EC2 Right-sizing):** Thu thập thành công các chỉ số chuyên sâu (metrics) qua CloudWatch Agent và phân tích bằng Compute Optimizer để đưa ra quyết định chọn cấu hình máy chủ tối ưu nhất, cân bằng giữa chi phí và hiệu suất.
+* **Bảo mật dữ liệu (KMS & Data logs):** Mã hóa thành công dữ liệu ở trạng thái nghỉ, đồng thời thiết lập hệ thống giám sát và truy vết các lệnh gọi API truy cập dữ liệu, đảm bảo tuân thủ nghiêm ngặt các quy chuẩn bảo mật.

@@ -5,27 +5,17 @@ weight: 1
 chapter: false
 pre: " <b> 3.2. </b> "
 ---
-{{% notice warning %}}
-⚠️ **Note:** The information below is for reference purposes only. Please **do not copy verbatim** for your report, including this warning.
-{{% /notice %}}
 
-# SESSION POLICIES IN AMAZON EKS POD IDENTITY
+# Optimizing Spring Boot Serverless performance on AWS Lambda with SnapStart
 
-Amazon EKS Pod Identity has recently added the session policies feature, allowing you to narrow IAM permissions flexibly and precisely for each pod without needing to create many separate IAM roles. This is an important step forward that helps apply the principle of least privilege more effectively in large-scale Kubernetes environments.
+This article introduces a real-world architectural approach to deploying Spring Boot applications on AWS Serverless, leveraging SnapStart to resolve the persistent "Cold Start" challenge inherent in modern Java systems. This solution transforms the typically heavy and time-consuming startup process of traditional applications into a near-instant state recovery mechanism. Consequently, it effectively eliminates latency barriers in serverless environments, enabling enterprises to modernize their Microservices architecture with agility, stability, and maximum cost-efficiency.
 
-Key points to know:
+**Problem Statement**: Traditional Spring Boot applications face significant "Cold Start" latency when migrated to serverless architecture due to lengthy Application Context and library initialization, degrading user experience.
 
-* A session policy is an inline IAM policy specified when creating or updating a Pod Identity association.
-* Effective permissions = intersection between the IAM role permissions and the session policy → the session policy can only narrow permissions, not expand them.
-* Helps avoid over-permissioning when reusing a single IAM role for multiple workloads with different needs.
-* Supports both same-account and cross-account (via IAM role chaining).
-* Significantly reduces the number of IAM roles that need to be managed, helping avoid hitting IAM quota limits in large clusters.
-* Easily configured through the AWS Management Console, AWS CLI, or AWS SDK when creating an association between a Kubernetes ServiceAccount and an IAM role.
+**Architectural Solution**: Implementing AWS Lambda integrated with SnapStart to optimize startup time via snapshot state restoration. The system integrates Amazon API Gateway, AWS Secrets Manager for credential security, and Amazon RDS within a Private Subnet to ensure data integrity.
 
-This feature is especially useful when you have many applications running on the same IAM role but need different permission restrictions (for example: one pod only reads a specific S3 bucket, another pod only calls certain APIs).
+**Execution Flow**: User requests via API Gateway trigger the AWS Lambda function. SnapStart enables Lambda to restore state rapidly, bypassing the heavy initialization phase. Subsequently, Lambda retrieves security credentials from Secrets Manager and executes data queries from Amazon RDS.
 
-...Image...
+**Evaluation**: The solution effectively addresses Java's Cold Start challenge, supports seamless auto-scaling, and optimizes operational costs for enterprises undergoing system modernization or transitioning to Microservices.
 
-...Link...
-
-...Guide...
+![AWS Lambda with Snapstart Architecture Diagram](/images/3-blogsposted/blog2/blog2.jpg)

@@ -6,42 +6,43 @@ chapter: false
 pre: " <b> 7. </b> "
 ---
 
-{{% notice warning %}}
-⚠️ **Note:** The information below is for reference purposes only. Please **do not copy verbatim** for your report, including this warning.
-{{% /notice %}}
-
-> Here, you can freely share your personal opinions about your experience participating in the First Cloud AI Journey program. This will help the FCAJ team improve any shortcomings based on the following aspects:
-
 ### Overall Evaluation
 
 **1. Working Environment**  
-The working environment is very friendly and open. FCAJ members are always willing to help whenever I encounter difficulties, even outside working hours. The workspace is tidy and comfortable, helping me focus better. However, I think it would be nice to have more social gatherings or team bonding activities to strengthen relationships.
+The working and learning environment is very open and dynamic. FCAJ members are always ready to support and discuss enthusiastically whenever someone faces difficulties, even outside official hours. Workspaces and team platforms are organized professionally, making it easy to stay focused. However, I think the program could add a few small social gatherings or team bonding sessions to help everyone connect and understand each other better.
 
 **2. Support from Mentor / Team Admin**  
-The mentor provides very detailed guidance, explains clearly when I don’t understand, and always encourages me to ask questions. The admin team supports administrative tasks, provides necessary documents, and creates favorable conditions for me to work effectively. I especially appreciate that the mentor allows me to try and solve problems myself instead of just giving the answer.
+The mentors provide very detailed guidance, thoroughly explaining technical issues and always encouraging interns to proactively ask questions. The admin team also closely follows up on procedures and documentation, creating the most favorable conditions for our work. I particularly appreciate that the mentors often suggest problem-solving directions, allowing me to tinker and resolve errors on my own rather than just giving me the ready-made answers.
 
 **3. Relevance of Work to Academic Major**  
-The tasks I was assigned align well with the knowledge I learned at university, while also introducing me to new areas I had never encountered before. This allowed me to both strengthen my foundational knowledge and gain practical skills.
+The tasks and practical exercises align perfectly with the software development knowledge I have acquired. Simultaneously, the program introduced me to a completely new and highly practical domain: Cloud Computing. Thanks to this, I not only solidified my foundational knowledge but also learned how to optimally deploy and integrate real-world applications into a cloud environment.
 
 **4. Learning & Skill Development Opportunities**  
-During the internship, I learned many new skills such as using project management tools, teamwork skills, and professional communication in a corporate environment. The mentor also shared valuable real-world experiences that helped me better plan my career path.
+Throughout the program, I acquired many crucial skills, including hands-on experience with real-world services, teamwork, process management, and professional communication. The practical insights shared by the mentors are truly invaluable and have given me a clearer perspective on my future career path.
 
 **5. Company Culture & Team Spirit**  
-The company culture is very positive: everyone respects each other, works seriously but still keeps things enjoyable. When there are urgent projects, everyone works together and supports one another regardless of their position. This made me feel like a real part of the team, even as an intern.
+The overall team spirit is highly positive: everyone respects one another, works seriously, yet remains very sociable and cheerful. Whether tackling difficult labs or rushing to meet tight project deadlines, everyone collaborates and supports each other regardless of their role. This made me feel like a true part of the collective.
 
 **6. Internship Policies / Benefits**  
-The company provides an internship allowance and offers flexible working hours when needed. In addition, having the opportunity to join internal training sessions is a big plus.
+The program offers reasonable support policies and flexible working hours. Being able to directly participate in internal training sessions and access standard practical resources and documentation is a massive plus for an intern.
 
 ---
 
 ### Additional Questions
-- What did you find **most satisfying** during your internship?  
-- What do you think the company **should improve** for future interns?  
-- If recommending to a friend, would you **suggest they intern here**? Why or why not?  
+- **What did you find most satisfying during your internship?**  
+  What satisfied me the most was the hands-on opportunity with actual AWS services and resources. Combining theory with practical application helped me deeply understand system architecture rather than just scratching the surface.
+  
+- **What do you think the company should improve for future interns?**  
+  The program could incorporate more complex, real-world case studies from enterprise projects—such as handling security incidents or optimizing costs on the Cloud—to give interns a more multidimensional perspective.
+  
+- **If recommending to a friend, would you suggest they intern here? Why or why not?**  
+  Absolutely. This is a fantastic environment and a solid stepping stone for IT students who want to experience a professional workplace or dive deeper into the Cloud computing field.
 
 ---
 
 ### Suggestions & Expectations
-- Do you have any suggestions to improve the internship experience?  
-- Would you like to continue this program in the future?  
-- Any other comments (free sharing):
+- **Do you have any suggestions to improve the internship experience?**  
+  I hope the program will organize more short Tech Talks on integrating Cloud solutions with traditional Backend systems, as well as host an offline wrap-up session for direct networking opportunities.
+  
+- **Would you like to continue this program in the future?**  
+  I am more than willing to participate in the upcoming phases or more advanced courses offered by FCAJ if given the opportunity.

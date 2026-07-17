@@ -5,53 +5,22 @@ weight: 2
 chapter: false
 pre: " <b> 1.10. </b> "
 ---
-{{% notice warning %}} 
-⚠️ **Note:** The following information is for reference purposes only. Please **do not copy verbatim** for your own report, including this warning.
-{{% /notice %}}
+
 
 
 ### Week 10 Objectives:
-
-* Connect and get acquainted with members of First Cloud AI Journey.
-* Understand basic AWS services, how to use the console & CLI.
+* Visualize, analyze, and optimize AWS costs in alignment with the Well-Architected Framework.
+* Build a comprehensive Data Lake system to store, process, and visualize Big Data.
+* Implement in-depth system monitoring and automated infrastructure alerting with Amazon CloudWatch.
 
 ### Tasks to be carried out this week:
-| Day | Task                                                                                                                                                                                                   | Start Date | Completion Date | Reference Material                        |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ---------- | --------------- | ----------------------------------------- |
-| 2   | - Get acquainted with FCAJ members <br> - Read and take note of internship unit rules and regulations                                                                                                   | 08/11/2025 | 08/11/2025      |
-| 3   | - Learn about AWS and its types of services <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                              | 08/12/2025 | 08/12/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Create AWS Free Tier account <br> - Learn about AWS Console & AWS CLI <br> - **Practice:** <br>&emsp; + Create AWS account <br>&emsp; + Install & configure AWS CLI <br> &emsp; + How to use AWS CLI | 08/13/2025 | 08/13/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Learn basic EC2: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - SSH connection methods to EC2 <br> - Learn about Elastic IP   <br>                            | 08/14/2025 | 08/15/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Practice:** <br>&emsp; + Launch an EC2 instance <br>&emsp; + Connect via SSH <br>&emsp; + Attach an EBS volume                                                                                     | 08/15/2025 | 08/15/2025      | <https://cloudjourney.awsstudygroup.com/> |
-
+| Day | Task | Start Date | Completion Date | Reference Material |
+| :--- | :--- | :--- | :--- | :--- |
+| 2-3 | **Cost Visualization:** Analyze costs via Cost Explorer (by service, account). Review Savings Plan/RI scopes and data transfer costs. Create custom EC2 reports. Troubleshoot EC2 configuration errors. | 22/06/2026 | 23/06/2026 | https://000034.awsstudygroup.com/1-introduction/ |
+| 4 | **Data Lake on AWS:** Collect and store raw data. Use AWS Glue as a Data Catalog, Amazon Athena for querying, and Amazon QuickSight to build statistical dashboards for a music analytics project. | 24/06/2026 | 24/06/2026 | https://000035.awsstudygroup.com/1-introduction/ |
+| 6 | **Amazon CloudWatch:** Collect Metrics and Logs. Configure CloudWatch Alarms and Dashboards. Explore Container Insights for monitoring EKS, ECS, and Fargate to reduce Mean Time To Resolution (MTTR). | 26/06/2026 | 26/06/2026 | https://000036.awsstudygroup.com/1-introduction/ |
 
 ### Week 10 Achievements:
-
-* Understood what AWS is and mastered the basic service groups: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
-
-* Successfully created and configured an AWS Free Tier account.
-
-* Became familiar with the AWS Management Console and learned how to find, access, and use services via the web interface.
-
-* Installed and configured AWS CLI on the computer, including:
-  * Access Key
-  * Secret Key
-  * Default Region
-  * ...
-
-* Used AWS CLI to perform basic operations such as:
-
-  * Check account & configuration information
-  * Retrieve the list of regions
-  * View EC2 service
-  * Create and manage key pairs
-  * Check information about running services
-  * ...
-
-* Acquired the ability to connect between the web interface and CLI to manage AWS resources in parallel.
-* ...
+* **Cost Management:** Mastered the use of Cost Explorer for tracking and cost optimization. Successfully troubleshot an EC2-related error during the lab by proactively reviewing and accurately rebuilding the configuration.
+* **Big Data Architecture (Data Lake):** Grasped the Big Data lifecycle. Successfully built a continuous data pipeline: from cataloging (Glue), serverless SQL querying directly on S3 (Athena), to visual representation via dashboards (QuickSight).
+* **System Monitoring (CloudWatch):** Achieved comprehensive observability for the infrastructure. Successfully established automated alerts and visual dashboards to monitor application health and container resources in real-time.

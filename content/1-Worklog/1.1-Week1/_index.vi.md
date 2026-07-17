@@ -14,7 +14,7 @@ pre: " <b> 1.1. </b> "
 ### Các công việc triển khai:
 | Thứ | Công việc | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu |
 | --- | --- | --- | --- | --- |
-| 2 | Tham gia họp phổ biến quy định, tác phong và làm quen môi trường làm việc. | 20/04/2026 | 20/04/2026 | |
+| 2 | Tham gia cuộc họp phổ biến quy định, tác phong và làm quen môi trường làm việc. | 20/04/2026 | 20/04/2026 | |
 | 3-7 | Đăng ký tài khoản AWS Free Tier (nhận $200 credit) và tìm hiểu AWS Console/CLI. | 21/04/2026 | 25/04/2026 | <https://000001.awsstudygroup.com/vi/> |
 
 ### Kết quả đạt được:

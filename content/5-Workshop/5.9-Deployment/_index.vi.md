@@ -17,7 +17,7 @@ Hệ thống hiện tại thỏa mãn các tiêu chuẩn của AWS Well-Architec
 | | Content |
 | :--- | :--- |
 | **Web access URL** | [WeDo Workspace Web](https://tinyurl.com/Wedo-c3d1) |
-| **Demo video** | Watch below or download [Demo-aws.mp4]https://drive.google.com/file/d/19xLXU1RvxNH7bTUEJIsSh8y-99wChhCZ/view?usp=sharing) |
+| **Demo video** | Watch below or download [Demo-aws.mp4](https://drive.google.com/file/d/19xLXU1RvxNH7bTUEJIsSh8y-99wChhCZ/view?usp=sharing) |
 
 <br>
 
